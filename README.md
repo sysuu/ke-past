@@ -55,7 +55,7 @@ BiliExp
 * [x] 风纪委员投票(云函数默认没有案件立即退出，Actions默认45分钟内没有案件自动退出，云函数上建议每20分钟运行1次)
 
 ***默认所有任务每天只执行1次***，但建议***云函数***上***风纪投票***，***抽奖转发***，***天选时刻***等任务每天***多次***执行，***Actions***上***风纪投票***，***天选时刻***，***直播挂机(领小心心)***等任务可以***设置更长的超时时间***(默认45分钟后退出)。
-</br>使用这些功能可以参考一下[部分功能推荐配置](https://github.com/happy888888/BiliExp/issues/178)
+</br>使用这些功能可以参考一下[部分功能推荐配置](https://github.com/llm2580/BiliExp-reset/issues/178)
 
 </br>[转至目录快速使用](#目录)
 </br>
@@ -88,7 +88,7 @@ BiliExp
   - [主要功能](#主要功能)
 - [目录](#目录)
 - [使用说明(仅自动操作脚本部分)](#使用方式仅自动操作脚本部分)
-  - [零、部分功能推荐配置](https://github.com/happy888888/BiliExp/issues/178)
+  - [零、部分功能推荐配置](https://github.com/llm2580/BiliExp-reset/issues/178)
   - [一、只使用Actions(推荐)](#方式一推荐只使用github-actions)
   - [二、使用腾讯云函数(Actions部署)](#方式二使用腾讯云函数)
   - [三、使用阿里云函数(Actions部署)(不推荐)](#方式三不推荐使用阿里云函数)
@@ -161,7 +161,7 @@ BiliExp
         *  2.1.3 (可选)name为"advconfig"           value为/config/config.json文件的所有内容(直接复制粘贴整个文件)
 		***此项为详细配置文件，可配置所有细节参数，前两项secrets均会自动映射到本配置文件中***<br>
 		***请注意不要直接修改/config/config.json文件而是使用本secrets(ADVCONFIG)***<br>
-		如果使用***天选时刻***，***风纪委员投票***和 ***直播心跳(获取小心心)*** 功能可参考 [部分功能推荐配置](https://github.com/happy888888/BiliExp/issues/178)
+		如果使用***天选时刻***，***风纪委员投票***和 ***直播心跳(获取小心心)*** 功能可参考 [部分功能推荐配置](https://github.com/llm2580/BiliExp-reset/issues/178)
     *  2.2 添加完上面的"Secrets"后，进入"Actions" --》"run BiliExp"，点击右边的"Run workflow"即可第一次启动
         *  2.2.1 首次fork可能要去actions(正上方的actions不是Settings里面的actions)里面同意使用actions条款，如果"Actions"里面没有"run BiliExp"，点一下右上角的"star"，"run BiliExp"就会出现在"Actions"里面(先按照主分支说明切换分支否则找不到对应的Actions)
 		![image](https://user-images.githubusercontent.com/67217225/98933791-16659480-251c-11eb-9713-c3dbcc6321bf.png)
